@@ -233,7 +233,7 @@ function esc(s){return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;")}
 function chips(list){return list.map(function(x){return "<span class='chip ltr'>"+esc(x)+"</span>"}).join("")}
 function render(l){
 var t=T[l];document.documentElement.lang=l;document.body.dir=t.dir;document.title=t.title;
-document.getElementById("name").innerHTML="Iliass<br>Bouchari";document.getElementById("mail2").textContent=t.mailbtn;document.getElementById("links").innerHTML=[["s-exp",t.exp],["s-edu",t.edu],["s-sk",t.skills],["s-ct",t.contact]].map(function(a){return "<a href='#"+a[0]+"'>"+esc(a[1])+"</a>"}).join("");
+document.getElementById("name").innerHTML="Iliass<br>Bouchari";document.getElementById("mail2").textContent=t.mailbtn;document.getElementById("links").innerHTML=[["s-exp",t.exp],["s-edu",t.edu],["s-ct",t.contact],["s-sk",t.skills]].map(function(a){return "<a href='#"+a[0]+"'>"+esc(a[1])+"</a>"}).join("");
 document.getElementById("role").textContent=t.role;
 document.getElementById("intro").textContent=t.intro;
 document.getElementById("dl").textContent=t.dl;
