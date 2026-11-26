@@ -126,7 +126,7 @@ var sec=c.parentNode;}
 function fb(v){var i=document.createElement("textarea");i.value=v;i.style.cssText="position:fixed;opacity:0";document.body.appendChild(i);i.select();try{document.execCommand("copy")}catch(e){}i.remove()}
 
 /* ---------- navigation ---------- */
-function nav(t){var items=[["s-exp",t.exp],["s-edu",t.edu],["s-sk",t.skills],["s-ct",t.contact],["s-pj",t.proj]];
+function nav(t){var items=[["s-exp",t.exp],["s-edu",t.edu],["s-ct",t.contact],["s-sk",t.skills],["s-pj",t.proj]];
 $("links").innerHTML=items.map(function(a){return '<a href="#'+a[0]+'">'+esc(a[1])+"</a>"}).join("");
 var b=$("bnav");b.setAttribute("aria-label",X[cur].sec);b.innerHTML=items.map(function(a){return '<a href="#'+a[0]+'">'+esc(a[1])+"</a>"}).join("")}
 function prog(){var p=$("prog"),tk=false;function u(){tk=false;var h=document.documentElement,m=h.scrollHeight-innerHeight;p.style.transform="scaleX("+(m>0?Math.min(1,scrollY/m):0)+")"}
